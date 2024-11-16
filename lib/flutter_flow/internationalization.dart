@@ -442,6 +442,20 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'sv': '',
       'tr': '',
     },
+    'j6l1ymqh': {
+      'en': 'Or',
+      'de': '',
+      'ko': '',
+      'sv': '',
+      'tr': '',
+    },
+    'fhafwt80': {
+      'en': 'Login to existing account',
+      'de': '',
+      'ko': '',
+      'sv': '',
+      'tr': '',
+    },
     'ifoumqwm': {
       'en': 'Home',
       'de': '',
@@ -489,6 +503,20 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     'ai09hvyz': {
       'en': 'Log In',
+      'de': '',
+      'ko': '',
+      'sv': '',
+      'tr': '',
+    },
+    'uletddmw': {
+      'en': 'Or',
+      'de': '',
+      'ko': '',
+      'sv': '',
+      'tr': '',
+    },
+    'zeampbp5': {
+      'en': 'Create new account',
       'de': '',
       'ko': '',
       'sv': '',

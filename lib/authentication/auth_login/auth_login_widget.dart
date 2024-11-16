@@ -392,6 +392,63 @@ class _AuthLoginWidgetState extends State<AuthLoginWidget> {
                                 ),
                               ),
                             ),
+                            Align(
+                              alignment: const AlignmentDirectional(0.0, -1.0),
+                              child: Padding(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
+                                    12.0, 0.0, 12.0, 12.0),
+                                child: Text(
+                                  FFLocalizations.of(context).getText(
+                                    'uletddmw' /* Or */,
+                                  ),
+                                  textAlign: TextAlign.start,
+                                  style: FlutterFlowTheme.of(context)
+                                      .labelLarge
+                                      .override(
+                                        fontFamily: 'Outfit',
+                                        letterSpacing: 0.0,
+                                      ),
+                                ),
+                              ),
+                            ),
+                            Padding(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
+                                  16.0, 12.0, 16.0, 24.0),
+                              child: FFButtonWidget(
+                                onPressed: () async {
+                                  context.pushNamed('auth_Create');
+                                },
+                                text: FFLocalizations.of(context).getText(
+                                  'zeampbp5' /* Create new account */,
+                                ),
+                                options: FFButtonOptions(
+                                  width: double.infinity,
+                                  height: 60.0,
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
+                                      0.0, 0.0, 0.0, 0.0),
+                                  iconPadding: const EdgeInsetsDirectional.fromSTEB(
+                                      0.0, 0.0, 0.0, 0.0),
+                                  color: FlutterFlowTheme.of(context).secondary,
+                                  textStyle: FlutterFlowTheme.of(context)
+                                      .titleMedium
+                                      .override(
+                                        fontFamily: 'Outfit',
+                                        color: FlutterFlowTheme.of(context)
+                                            .primaryText,
+                                        letterSpacing: 0.0,
+                                        fontWeight: FontWeight.w600,
+                                      ),
+                                  elevation: 0.0,
+                                  borderSide: const BorderSide(
+                                    color: Colors.transparent,
+                                    width: 1.0,
+                                  ),
+                                  borderRadius: BorderRadius.circular(50.0),
+                                  hoverColor:
+                                      FlutterFlowTheme.of(context).primaryText,
+                                ),
+                              ),
+                            ),
                           ],
                         ),
                       ),
