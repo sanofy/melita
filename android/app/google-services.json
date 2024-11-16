@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "620838875881",
+    "project_id": "melita-omtrpk",
+    "storage_bucket": "melita-omtrpk.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:620838875881:android:354100284b2ca53c9c7678",
+        "android_client_info": {
+          "package_name": "com.melita.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrQKTgF-pUgpKphkkrOA3kMjvnw781q3U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
