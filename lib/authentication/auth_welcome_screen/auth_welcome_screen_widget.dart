@@ -576,10 +576,6 @@ class _AuthWelcomeScreenWidgetState extends State<AuthWelcomeScreenWidget> {
                       height: 55.0,
                       backgroundColor: FlutterFlowTheme.of(context).primary,
                       borderColor: FlutterFlowTheme.of(context).secondaryText,
-                      dropdownColor:
-                          FlutterFlowTheme.of(context).primaryBackground,
-                      dropdownIconColor:
-                          FlutterFlowTheme.of(context).primaryBackground,
                       borderRadius: 8.0,
                       textStyle: FlutterFlowTheme.of(context)
                           .bodyMedium
