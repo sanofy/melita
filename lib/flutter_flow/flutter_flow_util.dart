@@ -37,11 +37,32 @@ void _setTimeagoLocales() {
   timeago.setLocaleMessages('en', timeago.EnMessages());
   timeago.setLocaleMessages('en_short', timeago.EnShortMessages());
   timeago.setLocaleMessages('tr', timeago.TrMessages());
-  timeago.setLocaleMessages('sv', timeago.SvMessages());
-  timeago.setLocaleMessages('sv_short', timeago.SvShortMessages());
   timeago.setLocaleMessages('ko', timeago.KoMessages());
   timeago.setLocaleMessages('de', timeago.DeMessages());
   timeago.setLocaleMessages('de_short', timeago.DeShortMessages());
+  timeago.setLocaleMessages('sv', timeago.SvMessages());
+  timeago.setLocaleMessages('sv_short', timeago.SvShortMessages());
+  timeago.setLocaleMessages('no', timeago.NnNoMessages());
+  timeago.setLocaleMessages('no_short', timeago.NnNoShortMessages());
+  timeago.setLocaleMessages('it', timeago.ItMessages());
+  timeago.setLocaleMessages('it_short', timeago.ItShortMessages());
+  timeago.setLocaleMessages('es', timeago.EsMessages());
+  timeago.setLocaleMessages('es_short', timeago.EsShortMessages());
+  timeago.setLocaleMessages('pt', timeago.PtBrMessages());
+  timeago.setLocaleMessages('pt_short', timeago.PtBrShortMessages());
+  timeago.setLocaleMessages('hu', timeago.HuMessages());
+  timeago.setLocaleMessages('hu_short', timeago.HuShortMessages());
+  timeago.setLocaleMessages('ru', timeago.RuMessages());
+  timeago.setLocaleMessages('ru_short', timeago.RuShortMessages());
+  timeago.setLocaleMessages('uk', timeago.UkMessages());
+  timeago.setLocaleMessages('uk_short', timeago.UkShortMessages());
+  timeago.setLocaleMessages('zh_Hans', timeago.ZhCnMessages());
+  timeago.setLocaleMessages('ja', timeago.JaMessages());
+  timeago.setLocaleMessages('hi', timeago.HiMessages());
+  timeago.setLocaleMessages('hi_short', timeago.HiShortMessages());
+  timeago.setLocaleMessages('fa', timeago.FaMessages());
+  timeago.setLocaleMessages('ar', timeago.ArMessages());
+  timeago.setLocaleMessages('ar_short', timeago.ArShortMessages());
 }
 
 String dateTimeFormat(String format, DateTime? dateTime, {String? locale}) {

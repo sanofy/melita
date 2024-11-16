@@ -1,6 +1,7 @@
 import '/auth/firebase_auth/auth_util.dart';
 import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
+import '/flutter_flow/flutter_flow_language_selector.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
@@ -230,45 +231,18 @@ class _ProfileWidgetState extends State<ProfileWidget>
                 ),
               ),
             ),
-            actions: [
-              Padding(
-                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 12.0, 0.0),
-                child: FlutterFlowIconButton(
-                  borderColor: Colors.transparent,
-                  borderRadius: 30.0,
-                  borderWidth: 1.0,
-                  buttonSize: 60.0,
-                  icon: Icon(
-                    Icons.notifications_none,
-                    color: FlutterFlowTheme.of(context).secondaryText,
-                    size: 30.0,
-                  ),
-                  onPressed: () async {
-                    context.pop();
-                  },
-                ),
-              ),
-            ],
-            centerTitle: false,
-            elevation: 0.0,
-          ),
-        ),
-        body: SafeArea(
-          top: true,
-          child: Column(
-            mainAxisSize: MainAxisSize.max,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              Align(
-                alignment: const AlignmentDirectional(-1.0, -1.0),
-                child: Padding(
-                  padding:
-                      const EdgeInsetsDirectional.fromSTEB(25.0, 10.0, 0.0, 20.0),
-                  child: Column(
-                    mainAxisSize: MainAxisSize.max,
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      RichText(
+            title: Align(
+              alignment: const AlignmentDirectional(0.0, 1.0),
+              child: Column(
+                mainAxisSize: MainAxisSize.max,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Align(
+                    alignment: const AlignmentDirectional(-1.0, -1.0),
+                    child: Padding(
+                      padding:
+                          const EdgeInsetsDirectional.fromSTEB(90.0, 20.0, 0.0, 0.0),
+                      child: RichText(
                         textScaler: MediaQuery.of(context).textScaler,
                         text: TextSpan(
                           children: [
@@ -302,28 +276,22 @@ class _ProfileWidgetState extends State<ProfileWidget>
                               ),
                         ),
                       ),
-                      Padding(
-                        padding:
-                            const EdgeInsetsDirectional.fromSTEB(0.0, 6.0, 10.0, 0.0),
-                        child: Text(
-                          FFLocalizations.of(context).getText(
-                            'pt2whkz4' /* View and edit your profile det... */,
-                          ),
-                          style: FlutterFlowTheme.of(context)
-                              .bodyMedium
-                              .override(
-                                fontFamily: 'Nunito',
-                                color: FlutterFlowTheme.of(context).primaryText,
-                                fontSize: 15.0,
-                                letterSpacing: 0.0,
-                                fontWeight: FontWeight.normal,
-                              ),
-                        ),
-                      ),
-                    ],
+                    ),
                   ),
-                ),
+                ],
               ),
+            ),
+            actions: const [],
+            centerTitle: false,
+            elevation: 0.0,
+          ),
+        ),
+        body: SafeArea(
+          top: true,
+          child: Column(
+            mainAxisSize: MainAxisSize.max,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
               Container(
                 width: 350.0,
                 height: 200.0,
@@ -556,7 +524,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                     animationsMap['containerOnPageLoadAnimation1']!),
               ),
               Padding(
-                padding: const EdgeInsetsDirectional.fromSTEB(24.0, 12.0, 24.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(24.0, 7.0, 24.0, 0.0),
                 child: Container(
                   width: double.infinity,
                   height: 70.0,
@@ -798,6 +766,27 @@ class _ProfileWidgetState extends State<ProfileWidget>
                   ),
                 ).animateOnPageLoad(
                     animationsMap['containerOnPageLoadAnimation3']!),
+              ),
+              Padding(
+                padding: const EdgeInsetsDirectional.fromSTEB(24.0, 12.0, 24.0, 0.0),
+                child: FlutterFlowLanguageSelector(
+                  height: 50.0,
+                  backgroundColor:
+                      FlutterFlowTheme.of(context).secondaryBackground,
+                  borderColor: Colors.transparent,
+                  dropdownIconColor: FlutterFlowTheme.of(context).secondaryText,
+                  borderRadius: 8.0,
+                  textStyle: FlutterFlowTheme.of(context).bodyMedium.override(
+                        fontFamily: 'Outfit',
+                        letterSpacing: 0.0,
+                      ),
+                  hideFlags: true,
+                  flagSize: 24.0,
+                  flagTextGap: 8.0,
+                  currentLanguage: FFLocalizations.of(context).languageCode,
+                  languages: FFLocalizations.languages(),
+                  onChanged: (lang) => setAppLanguage(context, lang),
+                ),
               ),
               Padding(
                 padding: const EdgeInsetsDirectional.fromSTEB(24.0, 12.0, 24.0, 0.0),

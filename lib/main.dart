@@ -19,6 +19,8 @@ void main() async {
 
   await FlutterFlowTheme.initialize();
 
+  await FFLocalizations.initialize();
+
   runApp(const MyApp());
 }
 
@@ -34,7 +36,7 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  Locale? _locale;
+  Locale? _locale = FFLocalizations.getStoredLocale();
 
   ThemeMode _themeMode = FlutterFlowTheme.themeMode;
 
@@ -71,6 +73,7 @@ class _MyAppState extends State<MyApp> {
 
   void setLocale(String language) {
     safeSetState(() => _locale = createLocale(language));
+    FFLocalizations.storeLocale(language);
   }
 
   void setThemeMode(ThemeMode mode) => safeSetState(() {
@@ -94,9 +97,22 @@ class _MyAppState extends State<MyApp> {
       supportedLocales: const [
         Locale('en'),
         Locale('tr'),
-        Locale('sv'),
         Locale('ko'),
         Locale('de'),
+        Locale('sv'),
+        Locale('no'),
+        Locale('it'),
+        Locale('es'),
+        Locale('pt'),
+        Locale('hu'),
+        Locale('ru'),
+        Locale('uk'),
+        Locale('kk'),
+        Locale.fromSubtags(languageCode: 'zh', scriptCode: 'Hans'),
+        Locale('ja'),
+        Locale('hi'),
+        Locale('fa'),
+        Locale('ar'),
       ],
       theme: ThemeData(
         brightness: Brightness.light,

@@ -740,7 +740,7 @@ class _RoutineSingleWidgetState extends State<RoutineSingleWidget> {
                                                         FFLocalizations.of(
                                                                 context)
                                                             .getText(
-                                                      'orrti465' /* Recommended products */,
+                                                      'orrti465' /* Used products */,
                                                     ),
                                                     labelStyle: FlutterFlowTheme
                                                             .of(context)
@@ -901,7 +901,7 @@ class _RoutineSingleWidgetState extends State<RoutineSingleWidget> {
                                                         FFLocalizations.of(
                                                                 context)
                                                             .getText(
-                                                      'ih6v5mop' /* Add your own notes */,
+                                                      'ih6v5mop' /* Add your own notes or details */,
                                                     ),
                                                     labelStyle: FlutterFlowTheme
                                                             .of(context)

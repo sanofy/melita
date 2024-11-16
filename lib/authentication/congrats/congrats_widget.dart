@@ -95,7 +95,7 @@ class _CongratsWidgetState extends State<CongratsWidget> {
                                 0.0, 2.0, 0.0, 0.0),
                             child: Text(
                               FFLocalizations.of(context).getText(
-                                'zi372s5x' /* Your Personal Care Journey Sta... */,
+                                'zi372s5x' /* You are one step closer to you... */,
                               ),
                               textAlign: TextAlign.center,
                               style: FlutterFlowTheme.of(context)
