@@ -116,14 +116,20 @@ class _AuthWelcomeScreenWidgetState extends State<AuthWelcomeScreenWidget> {
                                             mainAxisAlignment:
                                                 MainAxisAlignment.end,
                                             children: [
-                                              ClipRRect(
-                                                borderRadius:
-                                                    BorderRadius.circular(8.0),
-                                                child: Image.asset(
-                                                  'assets/images/Screenshot_14-11-2024_193711_-removebg-preview.png',
-                                                  width: 150.0,
-                                                  height: 50.0,
-                                                  fit: BoxFit.cover,
+                                              Padding(
+                                                padding: const EdgeInsetsDirectional
+                                                    .fromSTEB(
+                                                        10.0, 0.0, 10.0, 0.0),
+                                                child: ClipRRect(
+                                                  borderRadius:
+                                                      BorderRadius.circular(
+                                                          8.0),
+                                                  child: Image.asset(
+                                                    'assets/images/Screenshot_14-11-2024_193711_-removebg-preview.png',
+                                                    width: 150.0,
+                                                    height: 50.0,
+                                                    fit: BoxFit.cover,
+                                                  ),
                                                 ),
                                               ),
                                             ],
@@ -575,16 +581,15 @@ class _AuthWelcomeScreenWidgetState extends State<AuthWelcomeScreenWidget> {
                       width: 250.0,
                       height: 55.0,
                       backgroundColor: FlutterFlowTheme.of(context).primary,
-                      borderColor: FlutterFlowTheme.of(context).secondaryText,
+                      borderColor: const Color(0xFF5A666E),
+                      dropdownIconColor: const Color(0xFFEBEDEF),
                       borderRadius: 8.0,
-                      textStyle: FlutterFlowTheme.of(context)
-                          .bodyMedium
-                          .override(
-                            fontFamily: 'Outfit',
-                            color:
-                                FlutterFlowTheme.of(context).primaryBackground,
-                            letterSpacing: 0.0,
-                          ),
+                      textStyle:
+                          FlutterFlowTheme.of(context).bodyMedium.override(
+                                fontFamily: 'Outfit',
+                                color: Colors.white,
+                                letterSpacing: 0.0,
+                              ),
                       hideFlags: false,
                       flagSize: 24.0,
                       flagTextGap: 8.0,
